@@ -30,3 +30,27 @@ This project is a simple note-taking application developed using the Go programm
 
    ```bash
    go run main.go
+
+## API Usage
+
+1. Create a Note (POST)
+   To create a new note, use the following request:
+
+   ```bash
+   curl -X POST http://localhost:8080/notes -d '{"title": "Note 1", "content": "This is a note."}' -H "Content-Type: application/json"
+
+2. View All Notes (GET)
+   To view all notes, use the following request:
+
+   ```bash
+   curl -X GET http://localhost:8080/notes
+
+3. View a Specific Note (GET)
+   To view a specific note, use the note's ID in the following request:
+
+   ```bash
+   curl -X GET http://localhost:8080/notes/1
+
+   
+
+   
