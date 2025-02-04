@@ -22,6 +22,11 @@ This project is a simple note-taking application developed using the Go programm
    cd not-app
 
 2. Install the necessary modules:
-   
-  ```bash
-  go mod tidy
+
+   ```bash
+   go mod tidy
+
+3. Running the Application
+
+   ```bash
+   go run main.go
